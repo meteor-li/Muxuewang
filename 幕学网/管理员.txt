@@ -1,0 +1,11 @@
+账号：python
+密码：li983798
+
+
+在courses.views中第59行注释（课程类别有bug未修改）
+        # tag = course.category
+        # if tag:
+        #     relate_course = course.objects.filter(category=tag)[:3]
+        # else:
+        #     relate_course = []
+或者把第62行修改为             relate_course = Course.objects.filter(category=tag)[:3]
